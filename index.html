@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Kerja</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
+        .container { max-width: 500px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: auto; }
+        h2 { text-align: center; color: #333; }
+        label { display: block; margin: 10px 0 5px; }
+        input, select, textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulir Lamaran Kerja</h2>
+    <form action="mailto:hrd@hanasi.co.id" method="post" enctype="text/plain">
+        <label>Nama Lengkap</label>
+        <input type="text" name="nama" placeholder="Contoh: Budi Santoso" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="email@contoh.com" required>
+
+        <label>Posisi yang Dilamar</label>
+        <select name="posisi">
+            <option value="spv">SPV</option>
+            <option value="leader">Leader</option>
+            <option value="cleaner">Cleaner</option>
+        </select>
+
+        <label>Pesan Singkat / Ringkasan Diri</label>
+        <textarea name="pesan" rows="4"></textarea>
+
+        <button type="submit">Kirim Lamaran</button>
+    </form>
+</div>
+
+</body>
+</html>
